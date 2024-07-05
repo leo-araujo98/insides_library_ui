@@ -1,10 +1,15 @@
-import { openBlock as r, createElementBlock as a, Fragment as i, createElementVNode as s, toDisplayString as l } from "vue";
-const p = (t, e) => {
-  const c = t.__vccOpts || t;
-  for (const [o, n] of e)
-    c[o] = n;
-  return c;
-}, m = { class: "text" }, _ = ["src"], d = {
+import { openBlock, createElementBlock, Fragment, createElementVNode, toDisplayString } from "vue";
+var FirstTest_vue_vue_type_style_index_0_scoped_true_lang = "";
+var _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
+  }
+  return target;
+};
+const _hoisted_1 = { class: "text" };
+const _hoisted_2 = ["src"];
+const _sfc_main = {
   __name: "FirstTest",
   props: {
     title: {
@@ -16,17 +21,18 @@ const p = (t, e) => {
       default: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2M2cDhhaWJjaGcxemszYzJjcWkxODI5ZmttOXlpYnB2NHZwYXp1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2R0cE5EqO3QHiCoU/giphy.webp"
     }
   },
-  setup(t) {
-    const e = t;
-    return (c, o) => (r(), a(i, null, [
-      s("div", m, l(e.title), 1),
-      s("img", {
-        src: e.image,
-        alt: ""
-      }, null, 8, _)
-    ], 64));
+  setup(__props) {
+    const props = __props;
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock(Fragment, null, [
+        createElementVNode("div", _hoisted_1, toDisplayString(props.title), 1),
+        createElementVNode("img", {
+          src: props.image,
+          alt: ""
+        }, null, 8, _hoisted_2)
+      ], 64);
+    };
   }
-}, h = /* @__PURE__ */ p(d, [["__scopeId", "data-v-0d7c66b0"]]);
-export {
-  h as FirstTest
 };
+var FirstTest = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0d7c66b0"]]);
+export { FirstTest };
