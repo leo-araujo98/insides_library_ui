@@ -12,7 +12,7 @@
     "dev": "vite",
     "build": "npm run build:lib && npm run build:style",
     "build:lib": "vue-cli-service build --target lib --name insidesComponents src/index.js",
-    "build:style": "postcss src/tailwindcss.css -o dist/style.css",
+    "build:style": "postcss src/style.css -o dist/style.css",
     "preview": "vite preview"
   },
   "dependencies": {
