@@ -5,7 +5,7 @@ export { primary_button, second_button };
 
 function install(Vue) {
   Vue.component("primary_button", primary_button);
-  Vue.component("primary_button", second_button);
+  Vue.component("second_button", second_button);
 }
 
 export default { install: install };
