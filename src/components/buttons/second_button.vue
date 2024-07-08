@@ -1,10 +1,10 @@
 <template>
   <main class="relative">
-    <section v-if="isOpen" class="absolute w-full mt-14 text-center z-90">
+    <section v-if="isOpen" class="absolute w-full mt-14 text-center w-f">
       <div class="bg-red-300 rounded-md p-3">{{ alert }}</div>
     </section>
 
-    <button @click="toggleAlert()" class="bg-red-200 rounded-md p-3 ">
+    <button @click="toggleAlert()" class="bg-blue-200 rounded-md p-3 w-full z-10">
       <section class="flex justify-between gap-3 items-center">
         <div class="font-bold">{{ text }}</div>
 
@@ -38,7 +38,7 @@ import { onMounted, ref } from "vue";
 const props = defineProps({
   text: {
     type: String,
-    default: "primary-button",
+    default: "second-button",
   },
   alert: {
     type: String,
