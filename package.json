@@ -1,6 +1,6 @@
 {
   "name": "library_ui_test_by_me",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/insidesComponents.common.js",
   "module": "dist/insidesComponents.umd.js",
   "private": false,
